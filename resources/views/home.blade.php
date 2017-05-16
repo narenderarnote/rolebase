@@ -512,7 +512,7 @@
                               <label for="confirm-password" class="col-sm-2 control-label">
                               </label>
                               <div class="col-sm-10">
-                                 <input type="password" name="confirm-password" class="form-control" id="confirmPassword" placeholder="Confirm Password" />
+                                 <input type="password" name="password_confirmation" class="form-control" id="confirmPassword" placeholder="Confirm Password" />
                               </div>
                            </div>
                            <div class="form-group">

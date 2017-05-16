@@ -4,7 +4,7 @@ $('#loginForm').on('submit',function(e){
         url: $(this).attr('action'),
         data: $(this).serialize(),
         success: function () {
-     		 alert('form was submitted');
+     		 alert('form was submitted123');
     	}
     });
     e.preventDefault();
@@ -14,8 +14,9 @@ $('#RegistrationForm').on('submit',function(e){
 	            type: 'post',
 	            url: $('#RegistrationForm').attr('action'),
 	            data: $('#RegistrationForm').serialize(),
-	            success: function () {
-	         		 alert('form was submitted');
+	            success: function (response) {
+	         		console.log(response);
+	         		$('#myModal').modal('hide');
 	        	}
 	    });
 	e.preventDefault();        
